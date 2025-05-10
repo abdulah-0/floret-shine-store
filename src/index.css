@@ -1,0 +1,43 @@
+/* 1) Reset box-model & remove default margins/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) Full-viewport dark-grey canvas + default light text */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background-color: #121212; /* dark grey */
+  color: #e0e0e0;            /* light grey text */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 3) Scrollbar track to match background (optional) */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* 4) Force all MUI Buttons to be visible */
+.MuiButton-root {
+  /* give every button a bit of padding/margin if needed */
+  padding: 6px 16px;
+}
+
+/* 5) Contained-primary buttons (e.g. color="primary", variant="contained") */
+.MuiButton-containedPrimary {
+  background-color: #1976d2 !important; /* default MUI blue */
+  color: #fff !important;
+}
+
+/* 6) Text-primary buttons (e.g. variant="text") */
+.MuiButton-textPrimary {
+  color: #1976d2 !important;
+}
+
+/* 7) If you ever have an outlined button: */
+.MuiButton-outlinedPrimary {
+  border-color: #1976d2 !important;
+  color: #1976d2 !important;
+}
